@@ -14,8 +14,11 @@ export class PokeController {
   }
 
   // Find by ID
-  @Get(':name')
-  findOne(@Param('name') name: string): string {
-    return `This returns a pokemon by id. The id of this pokemon is ${name}`;
+  @Get(':id')
+  findOne(@Param('id') id: string): string {
+    return `Testing this route: ${id}`;
+    // const res = this.pokeService.findOne(id);
+    // console.log(res);
+    // return res;
   }
 }

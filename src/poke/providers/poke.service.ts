@@ -20,4 +20,9 @@ export class PokeService {
   }
 
   //Find by ID
+  findOne(id) {
+    return this.httpService
+      .get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+      .pipe(map((response) => response.data));
+  }
 }
