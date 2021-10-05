@@ -14,8 +14,8 @@ export class PokeController {
   }
 
   // Find by ID
-  @Get(':id')
-  findOne(@Param('id') id: string): string {
-    return `This returns a pokemon by id. The id of this pokemon is ${id}`;
+  @Get(':name')
+  findOne(@Param('name') name: string): string {
+    return `This returns a pokemon by id. The id of this pokemon is ${name}`;
   }
 }

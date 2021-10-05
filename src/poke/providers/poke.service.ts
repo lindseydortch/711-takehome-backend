@@ -1,4 +1,4 @@
-import { Get, Injectable, Param } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { map } from 'rxjs';
 import { Poke } from '../interfaces/poke.interface';
